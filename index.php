@@ -31,13 +31,19 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
+				the_title();
+				// write ACF code here
+				//write html code here
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				if( function_exists( 'get_field' ) ){
+
+					if ( get_field( 'tools' ) ){ //Prevents empty HTML
+						echo '<p>';
+						the_field( 'tools' );
+						echo '</p>';
+					}
+					
+				}	
 
 			endwhile;
 
@@ -53,5 +59,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();
