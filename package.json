@@ -1,0 +1,19 @@
+{
+  "name": "twd-wordpress",
+  "version": "1.0.0",
+  "description": "TWD WordPress Assignment",
+  "author": "TWD Student",
+  "license": "GPL-3.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.0.1",
+    "postcss": "8.1.1",
+    "gulp": "4.0.2",
+    "gulp-postcss": "9.0.0",
+    "gulp-dart-sass": "1.0.2",
+    "gulp-sourcemaps": "2.6.5"
+  }
+}
