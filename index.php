@@ -22,30 +22,37 @@ get_header();
 
 			if ( is_home() && ! is_front_page() ) :
 				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+				<header class="page-header">	
+					<h1>Web Development</h1>
+				</header>  <!-- page-heder -->
 				<?php
 			endif;
-
+			
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
 				the_title();
 				// write ACF code here
 				//write html code here
-
 				if( function_exists( 'get_field' ) ){
 
 					if ( get_field( 'tools' ) ){ //Prevents empty HTML
 						echo '<p>';
 						the_field( 'tools' );
 						echo '</p>';
+						
 					}
 					
-				}	
+				}
+				?>
+				<div class="wp-block-buttons">
+							<div class="wp-block-button is-style-outline dark">
+								<a class="wp-block-button__link" href="<?php echo esc_url(get_permalink() ) ?>">See process</a>
+							</div><!-- end outline -->
+				</div><!-- end block-buttons -->
+								
 
-			endwhile;
+				<?php	endwhile;
 
 			the_posts_navigation();
 

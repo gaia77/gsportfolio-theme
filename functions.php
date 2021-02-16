@@ -100,6 +100,8 @@ if ( ! function_exists( 'gsportfolio_theme_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+		// Add support for full and wide align images.
+		add_theme_support( 'align-wide' );
 	}
 endif;
 add_action( 'after_setup_theme', 'gsportfolio_theme_setup' );
@@ -142,6 +144,11 @@ add_action( 'widgets_init', 'gsportfolio_theme_widgets_init' );
 function gsportfolio_theme_scripts() {
 	wp_enqueue_style( 'gsportfolio-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'gsportfolio-theme-style', 'rtl', 'replace' );
+
+	wp_enqueue_style( 'gsportfolio-theme-googlefonts', "href=https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap" ,
+	array(),
+	null
+	);
 
 	wp_enqueue_script( 'gsportfolio-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
