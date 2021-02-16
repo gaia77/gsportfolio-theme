@@ -145,7 +145,7 @@ function gsportfolio_theme_scripts() {
 	wp_enqueue_style( 'gsportfolio-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'gsportfolio-theme-style', 'rtl', 'replace' );
 
-	wp_enqueue_style( 'gsportfolio-theme-googlefonts', "href=https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap" ,
+	wp_enqueue_style( 'gsportfolio-theme-googlefonts', "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap" ,
 	array(),
 	null
 	);

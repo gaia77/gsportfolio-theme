@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying Contact pages
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -30,6 +30,19 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+
+		<p>
+			<?php
+				echo '<div class="socialmedia">'; 
+					
+					echo '<a href="https://www.linkedin.com/in/gaia-santoro/">'.get_template_part( 'icons/linkedin').'</a>';
+					
+					echo '<a href="https://www.github.com/gaia77">'.get_template_part( 'icons/github').'</a>';
+					
+				echo '</div>';							
+			?>
+
+		</p>
 
 	</main><!-- #main -->
 

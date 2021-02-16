@@ -718,9 +718,17 @@ textarea {
 	margin: 1.5em 0 0;
 }
 
+.entry-meta {
+	display: none;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.cat-links {
+	display: none;
 }
 
 /* Comments

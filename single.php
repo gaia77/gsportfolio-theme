@@ -15,32 +15,25 @@ get_header();
 		<?php
 		while ( have_posts() ) :			
 			the_post();
+			echo '<h1>';
+				the_title();
+			echo '</h1>';
 			
-			// if( function_exists( 'get_field' ) ){
+			if( function_exists( 'get_field' ) ){
 
-			// 	if ( get_field( 'tools' ) ){ //Prevents empty HTML
-			//  		echo '<p>';
-			//  		the_field( 'tools' );
-			//  		echo '</p>';
+				if ( get_field( 'tools' ) ){ //Prevents empty HTML
+					echo '<p class=>';
+					the_field( 'tools' );
+					echo '</p>';
 					
-			//  	}
+				}
 				
-			//  }
-			get_template_part( 'template-parts/content', get_post_type() );
+			}
 			
-			
-			// the_post_navigation(
-			// 	array(
-			// 		'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'gsportfolio-theme' ) . '</span> <span class="nav-title">%title</span>',
-			// 		'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'gsportfolio-theme' ) . '</span> <span class="nav-title">%title</span>',
-			// 	)
-			// );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			// if ( comments_open() || get_comments_number() ) :
-			// 	comments_template();
-			// endif;
-
+			the_content();
+			?>
+			<a href='<?php the_permalink(13) ?>'>See all Projects</a>
+		<?php	
 		endwhile; // End of the loop.
 		
 		?>
