@@ -6,9 +6,10 @@
 .site-header {
 	
     .site-branding {
-        padding: 16px;    
+        padding: 20px;  
+        margin-top: 8px;  
         
-        @media (min-width: 550px) {
+        @media (min-width: 500px) {
             padding: 16px 32px;
         }
     }

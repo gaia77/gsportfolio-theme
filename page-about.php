@@ -28,10 +28,14 @@ get_header();
 				comments_template();
 			endif;
 		?>
-			<a class="button-link" href="<?php echo the_permalink(11) ?>">Contact</a>
+		<div class="btn-container">
+			
+				<a class="btn-link-contact" href="<?php echo the_permalink(11) ?>">Contact</a>
+			
 				
-			<a class="button-link" href="<?php echo the_permalink(13) ?>">See my Work</a>
-	
+				<a class="btn-link-work" href="<?php echo the_permalink(13) ?>">See my Work</a>
+			
+		</div>	
 		<?php	
 		endwhile; // End of the loop.
 		?>

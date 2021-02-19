@@ -13,7 +13,7 @@
         }
     
         .wp-image-63{
-            border-radius: 22px;
+            border-radius: 3px;
         }
     
         .my-toolkit{
@@ -25,12 +25,35 @@
             columns: 2;
             font-size: 17px;    
         }
-        
-        a.button-link{
+    }    
+    .btn-container{
+        a.btn-link-contact,
+        a.btn-link-work{
+            color: white;
+            background-color: black;
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: $fontBold;
+            width: 308px;
             margin: 0 auto;
-        }
-    
-        
-    }
+            margin-top: 8px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 10.672px 21.328px;
 
-}
+             &:hover, &:focus, &:active {
+                 opacity: 1;
+                 background-color: #f7f7f7;
+                 border: 1px solid black;
+                 color: black;
+                 transition: all 0.1s ease-in-out;
+                 transition-delay: 0.2s;
+                
+            }   
+        }
+
+    }            
+
+}//end main

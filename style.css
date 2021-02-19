@@ -1040,9 +1040,10 @@ textarea {
 }
 
 .site-header .site-branding {
-	padding: 16px;
+	padding: 20px;
+	margin-top: 8px;
 }
-@media (min-width: 550px) {
+@media (min-width: 500px) {
 	.site-header .site-branding {
 		padding: 16px 32px;
 	}
@@ -1312,7 +1313,7 @@ textarea {
 }
 .site-main .post-5 .name {
 	text-transform: uppercase;
-	font-size: 56px;
+	font-size: 54px;
 	padding: 16px 20px;
 	margin: 0px;
 }
@@ -1571,9 +1572,8 @@ textarea {
 	box-shadow: 8px 8px 17px 2px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 8px 8px 17px -2px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 8px 8px 17px -2px rgba(0, 0, 0, 0.75);
-	padding: 16px;
-	margin-bottom: 8px;
-	margin: 16px 20px;
+	padding: 20px;
+	margin: 16px 20px 30px 20px;
 }
 .site-main .project .work-title {
 	text-transform: uppercase;
@@ -1829,6 +1829,7 @@ textarea {
 
 .site-main .main-container {
 	margin: 16px 20px;
+	margin-bottom: 0px;
 }
 .site-main .main-container .project-title {
 	text-transform: uppercase;
@@ -1843,13 +1844,13 @@ textarea {
 .site-main .main-container .wp-block-buttons {
 	display: block;
 	text-align: center;
-	border: 3px solid red;
 }
 .site-main .main-container .wp-block-buttons a.wp-block-button__link {
 	font-size: 16px;
 	color: black;
 	text-transform: uppercase;
 	font-weight: 600;
+	width: 308px;
 }
 .site-main .main-container .wp-block-buttons a.wp-block-button__link:hover, .site-main .main-container .wp-block-buttons a.wp-block-button__link:focus, .site-main .main-container .wp-block-buttons a.wp-block-button__link:active {
 	opacity: 1;
@@ -1865,7 +1866,7 @@ textarea {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 700;
-	width: 100%;
+	width: 308px;
 	margin: 0 auto;
 	text-align: center;
 	border: 2px solid black;
@@ -2123,7 +2124,7 @@ textarea {
 	font-weight: 600;
 }
 .site-main .post-7 .wp-image-63 {
-	border-radius: 22px;
+	border-radius: 3px;
 }
 .site-main .post-7 .my-toolkit {
 	text-transform: uppercase;
@@ -2134,8 +2135,32 @@ textarea {
 	     columns: 2;
 	font-size: 17px;
 }
-.site-main .post-7 a.button-link {
+.site-main .btn-container a.btn-link-contact,
+.site-main .btn-container a.btn-link-work {
+	color: white;
+	background-color: black;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	width: 308px;
 	margin: 0 auto;
+	margin-top: 8px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 10.672px 21.328px;
+}
+.site-main .btn-container a.btn-link-contact:hover, .site-main .btn-container a.btn-link-contact:focus, .site-main .btn-container a.btn-link-contact:active,
+.site-main .btn-container a.btn-link-work:hover,
+.site-main .btn-container a.btn-link-work:focus,
+.site-main .btn-container a.btn-link-work:active {
+	opacity: 1;
+	background-color: #f7f7f7;
+	border: 1px solid black;
+	color: black;
+	transition: all 0.1s ease-in-out;
+	transition-delay: 0.2s;
 }
 
 /*--------------------------------------------------------------
@@ -2380,9 +2405,11 @@ textarea {
 	width: 100%;
 }
 
+.site-main {
+	height: 100%;
+}
 .site-main .post-11 {
 	margin: 16px 20px;
-	padding-bottom: 250px;
 }
 .site-main .post-11 .entry-title {
 	text-align: center;

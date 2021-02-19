@@ -5,6 +5,7 @@
 .site-main{
     .main-container{
         margin: 16px 20px;
+        margin-bottom: 0px;
     
         .project-title{
             text-transform: uppercase;
@@ -23,8 +24,9 @@
         .wp-block-buttons{
             display: block;
             text-align: center;
+            
             // width: 100%;
-            border: 3px solid red;
+            // border: 3px solid red;
             
             
     
@@ -33,6 +35,7 @@
                 color: black;
                 text-transform: uppercase;
                 font-weight: $fontSemi;
+                width: 308px;
                 
                 
                 &:hover, 
@@ -56,7 +59,7 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: $fontBold;
-        width: 100%;
+        width: 308px;
         margin: 0 auto;
         text-align: center;
         border: 2px solid black;
