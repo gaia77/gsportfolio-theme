@@ -1,0 +1,22 @@
+// Styles for Footer
+@import "../base/base"; 
+
+/* Footer
+--------------------------------------------- */
+
+.site-footer {
+    margin-bottom: 80px;
+
+    .site-info{
+        
+        font-weight: $fontReg;
+        letter-spacing: 1px;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        padding: 16px 40px;
+        margin: 0;
+        text-align: right;
+        max-height: 138px;
+    }
+}
+

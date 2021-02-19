@@ -31,18 +31,9 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		<p>
-			<?php
-				echo '<div class="socialmedia">'; 
-					
-					echo '<a href="https://www.linkedin.com/in/gaia-santoro/">'.get_template_part( 'icons/linkedin').'</a>';
-					
-					echo '<a href="https://www.github.com/gaia77">'.get_template_part( 'icons/github').'</a>';
-					
-				echo '</div>';							
-			?>
-
-		</p>
+		
+			
+		
 
 	</main><!-- #main -->
 

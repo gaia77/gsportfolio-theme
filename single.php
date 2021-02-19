@@ -12,27 +12,29 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :			
-			the_post();
-			echo '<h1>';
-				the_title();
-			echo '</h1>';
-			
-			if( function_exists( 'get_field' ) ){
+		<div class="main-container">
+			<?php
+			while ( have_posts() ) :			
+				the_post();
+				echo '<h1 class="project-title">';
+					the_title();
+				echo '</h1>';
+				
+				if( function_exists( 'get_field' ) ){
 
-				if ( get_field( 'tools' ) ){ //Prevents empty HTML
-					echo '<p class=>';
-					the_field( 'tools' );
-					echo '</p>';
+					if ( get_field( 'tools' ) ){ //Prevents empty HTML
+						echo '<p class="tools">';
+						the_field( 'tools' );
+						echo '</p>';
+						
+					}
 					
 				}
 				
-			}
-			
-			the_content();
+				the_content();
 			?>
-			<a href='<?php the_permalink(13) ?>'>See all Projects</a>
+		</div>
+			<a class="btn-link-single" href="<?php echo the_permalink(13) ?>">Back to all Projects</a>	
 		<?php	
 		endwhile; // End of the loop.
 		

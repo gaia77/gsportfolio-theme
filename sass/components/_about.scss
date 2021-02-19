@@ -1,0 +1,36 @@
+// Styles for About page
+
+@import "../base/base"; 
+
+.site-main{
+
+    .post-7{
+        margin: 16px 20px;
+        
+        .entry-title{
+            text-align: center;
+            font-weight: $fontSemi;
+        }
+    
+        .wp-image-63{
+            border-radius: 22px;
+        }
+    
+        .my-toolkit{
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .col{
+            columns: 2;
+            font-size: 17px;    
+        }
+        
+        a.button-link{
+            margin: 0 auto;
+        }
+    
+        
+    }
+
+}

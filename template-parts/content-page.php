@@ -27,6 +27,23 @@
 			)
 		);
 		?>
+		<?php
+		if(is_page(11)): ?>
+		<nav class="social">
+				<?php
+					echo '<div class="linkedin">'; 	
+						echo '<a href="https://www.linkedin.com/in/gaia-santoro/">';
+						get_template_part( 'icons/linkedin');
+						echo '</a>';
+					echo '</div>';
+					echo '<div class="github">'; 	
+						echo '<a href="https://www.github.com/gaia77">';
+						get_template_part( 'icons/github');
+						echo '</a>';		
+					echo '</div>';							
+				?>
+			</nav>
+		<?php endif ?>	
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

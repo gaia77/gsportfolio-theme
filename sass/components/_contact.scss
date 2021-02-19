@@ -1,0 +1,49 @@
+// Styles for Contact page
+
+@import "../base/base";
+
+.site-main{
+    
+    .post-11{
+        margin: 16px 20px;
+        
+        padding-bottom: 250px;
+
+        .entry-title{
+            text-align: center;
+            font-weight: $fontSemi;
+            // border: 3px solid green;
+        }
+
+        
+        a{
+            text-decoration: none;
+            color: #2c3233;
+            font-weight: 700;
+        }
+        .social{
+            display: flex;
+            // border: 3px solid red;
+
+            .linkedin, .github{
+                display: inline-block;
+                margin: 0 auto;
+
+                &:hover, 
+                &:focus, 
+                &:active {
+                        opacity: 1;
+                        fill: rgb(56, 56, 56);
+                        color: #f7f7f7;
+                        transition: all 0.1s ease-in-out;
+                        transition-delay: 0.2s;
+                            
+                     }   
+    
+            }
+        }
+    
+        
+    }
+
+}

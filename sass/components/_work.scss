@@ -1,0 +1,79 @@
+// Styles for Work page
+
+ @import "../base/base"; 
+
+// .blog .wp-custom-logo{
+//     // height: 100vh;
+// }
+
+.site-main{
+    
+    .page-header{
+        text-align: center;
+    }
+
+    .work{
+        text-transform: uppercase;
+        font-weight: $fontBold;
+    }
+
+    .project{
+        border: 1px solid black;
+        // box-shadow: 5px 8px black;
+        box-shadow: 8px 8px 17px 2px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 8px 8px 17px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 8px 8px 17px -2px rgba(0,0,0,0.75);
+        padding: 16px;
+        margin-bottom: 8px;
+        margin: 16px 20px;
+
+        .work-title{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: $fontSemi;
+        }    
+
+    
+        .tools{
+            font-weight: $fontReg;
+            text-align: center;        
+        }
+        
+        // a.button-link{
+        //     // font-size: 18px;
+        //     color: black;
+        //     display: block;
+        //     text-transform: uppercase;
+        //     text-decoration: none;
+        //     font-weight: $fontBold;
+        //     max-width: 170px;
+        //     //width: 100%;
+        //     margin: 0 auto;
+        //     text-align: center;
+        //     border: 2px solid black;
+        //     border-radius: 3px;
+        //     padding: 10.672px 21.328px;
+        
+        //     &:hover, &:focus, &:active {
+        //         opacity: 1;
+        //         background-color: black;
+        //         color: #f7f7f7;
+        //         transition: all 0.1s ease-in-out;
+        //         transition-delay: 0.2s;
+                
+        //     }   
+        // }
+
+    
+    }// end project
+}
+
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/columns
+
+
+    
+    
+
+     
+    

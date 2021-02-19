@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<?php esc_html_e( '© 2021 ', 'gsportfolio-theme' ); ?><a href="<?php echo esc_url( __( 'https://gsantoro.bcitwebdeveloper.ca/', 'gsportfolio-theme' ) ); ?>"><?php esc_html_e( 'Gaia Santoro', 'gsportfolio-theme' ); ?></a>
+			<?php esc_html_e( '© 2021 ', 'gsportfolio-theme' ); ?><?php esc_html_e( 'Gaia Santoro', 'gsportfolio-theme' ); ?></a>
 		</div><!-- .site-info -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

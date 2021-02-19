@@ -1,0 +1,74 @@
+// Styles for Single Project page
+
+@import "../base/base";
+
+.site-main{
+    .main-container{
+        margin: 16px 20px;
+    
+        .project-title{
+            text-transform: uppercase;
+            
+        }
+        .tools{
+            font-weight: $fontReg;
+               
+        }
+    
+        .project-goals, .project-design, 
+        .project-reflections, .project-dev{
+            text-transform: uppercase;
+        }
+    
+        .wp-block-buttons{
+            display: block;
+            text-align: center;
+            // width: 100%;
+            border: 3px solid red;
+            
+            
+    
+            a.wp-block-button__link{
+                font-size: 16px;
+                color: black;
+                text-transform: uppercase;
+                font-weight: $fontSemi;
+                
+                
+                &:hover, 
+                &:focus, 
+                &:active{
+                        opacity: 1;
+                        background-color: black;
+                        color: #f7f7f7;
+                        transition: all 0.1s ease-in-out;
+                        transition-delay: 0.2s;
+                }   
+            }
+        }
+    
+    }
+    a.btn-link-single{
+        // font-size: 18px;
+        color: white;
+        background-color: black;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: $fontBold;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 10.672px 21.328px;
+    }
+    
+}//site-main
+
+
+
+
+// @media (min-width: $tabletSmall){
+//     @include mc;
+// }

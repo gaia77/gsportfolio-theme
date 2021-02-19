@@ -1,0 +1,21 @@
+// Styles for Header
+
+@import "../base/base"; 
+@import "../abstracts/mixins/mixins"; 
+
+.site-header {
+	
+    .site-branding {
+        padding: 16px;    
+        
+        @media (min-width: 550px) {
+            padding: 16px 32px;
+        }
+    }
+    
+    .custom-logo{
+        width: 150px;
+        height: 150px;
+    }
+    
+}

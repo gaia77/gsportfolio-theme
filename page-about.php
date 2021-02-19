@@ -27,7 +27,12 @@ get_header();
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
-
+		?>
+			<a class="button-link" href="<?php echo the_permalink(11) ?>">Contact</a>
+				
+			<a class="button-link" href="<?php echo the_permalink(13) ?>">See my Work</a>
+	
+		<?php	
 		endwhile; // End of the loop.
 		?>
 

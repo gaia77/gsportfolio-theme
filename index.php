@@ -23,21 +23,31 @@ get_header();
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header class="page-header">	
-					<h1>Web Development</h1>
+					<h1 class="work">Web Development</h1>
 				</header>  <!-- page-heder -->
+				
 				<?php
 			endif;
 			
 			/* Start the Loop */
-			while ( have_posts() ) :
+			while ( have_posts() ) : ?>
+				<article class="project">
+			<?php
 				the_post();
+			?>
+				<h2 class="work-title">
+			<?php	
 				the_title();
+			?>	
+				</h2>
+
+			<?php
 				// write ACF code here
 				//write html code here
 				if( function_exists( 'get_field' ) ){
 
 					if ( get_field( 'tools' ) ){ //Prevents empty HTML
-						echo '<p>';
+						echo '<p class="tools">';
 						the_field( 'tools' );
 						echo '</p>';
 						
@@ -45,12 +55,10 @@ get_header();
 					
 				}
 				?>
-				<div class="wp-block-buttons">
-							<div class="wp-block-button is-style-outline dark">
-								<a class="wp-block-button__link" href="<?php echo esc_url(get_permalink() ) ?>">See process</a>
-							</div><!-- end outline -->
-				</div><!-- end block-buttons -->
-								
+					
+				<a class="button-link" href="<?php echo esc_url(get_permalink() ) ?>">See process</a>
+						
+			</article>				
 
 				<?php	endwhile;
 

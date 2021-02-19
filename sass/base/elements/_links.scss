@@ -1,22 +1,48 @@
-a {
-	color: $color__link;
+//  a {
+//  	color: $color__link;
 
-	&:visited {
-		color: $color__link-visited;
-	}
+//  	&:visited {
+//  		color: $color__link-visited;
+//  	}
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
+//  	&:hover,
+//  	&:focus,
+//  	&:active {
+//  		color: $color__link-hover;
+//  	}
 
-	&:focus {
-		outline: thin dotted;
-	}
+//  	&:focus {
+//  		outline: thin dotted;
+//  	}
 
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+//  	&:hover,
+//  	&:active {
+// 		outline: 0;
+//  	}
+//  }
+
+a.button-link{
+	// font-size: 18px;
+	color: black;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: $fontBold;
+	max-width: 170px;
+	//width: 100%;
+	margin: 0 auto;
+	margin-top: 19.92px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 10.672px 21.328px;
+
+	&:hover, &:focus, &:active {
+		opacity: 1;
+		background-color: black;
+		color: #f7f7f7;
+		transition: all 0.1s ease-in-out;
+		transition-delay: 0.2s;
+		
+	}   
 }
