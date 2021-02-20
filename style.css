@@ -664,6 +664,10 @@ textarea {
 }
 @media (min-width: 640px) {
 	.main-navigation {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
 		background-color: transparent;
 		width: auto;
 		position: relative;
@@ -1085,6 +1089,14 @@ textarea {
 		padding: 16px 32px;
 	}
 }
+@media (min-width: 640px) {
+	.site-header .site-branding {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 .site-header .custom-logo {
 	width: 150px;
 	height: 150px;
@@ -1363,6 +1375,10 @@ textarea {
 }
 @media (min-width: 350px) {
 	.site-main .post-5 {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
 		max-width: 330px;
 		padding: 0.8rem;
 	}
@@ -2788,7 +2804,7 @@ textarea {
 /* Footer
 --------------------------------------------- */
 .site-footer {
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 }
 .site-footer .site-info {
 	font-weight: 400;

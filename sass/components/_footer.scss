@@ -1,11 +1,13 @@
 // Styles for Footer
 @import "../base/base"; 
+@import "../abstracts/mixins/mixins"; 
+
 
 /* Footer
 --------------------------------------------- */
 
 .site-footer {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
     .site-info{
         
@@ -18,5 +20,6 @@
         text-align: right;
         max-height: 138px;
     }
+    
 }
 

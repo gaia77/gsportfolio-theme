@@ -17,23 +17,25 @@
              width: 360px;
         }   
 
-         @media (min-width: 500px) {
+        @media (min-width: 500px) {
              padding: 16px 32px;
+
         }
+        @media(min-width: 640px){
+            @include mc;
+        }
+
     }
     
     .custom-logo{
         width: 150px;
         height: 150px;
         padding: 0px;
-    }
-
-    // @media (min-width: 410px) {
-    //     padding-left: 2rem;    
-    //     // width: 360px;
-    // }   
+        
+    } 
 
     @media(min-width: 640px){
+        
         display: flex;
         padding-right: 32px;
     }

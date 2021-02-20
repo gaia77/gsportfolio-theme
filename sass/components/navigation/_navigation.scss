@@ -45,6 +45,7 @@
 	}
 
 	@media (min-width: 640px) {
+			@include mc;
 			background-color: transparent;
 			width: auto;
 			position: relative;
