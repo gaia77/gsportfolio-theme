@@ -5,8 +5,8 @@
 
 .site-main{
     .main-container{
-        margin: 16px 20px;
-        margin-bottom: 2px;
+        // margin: 16px 20px;
+        padding: 0 1rem;
     
         .project-title{
             text-transform: uppercase;
@@ -27,18 +27,14 @@
             // text-align: center;
             .wp-block-button{
                 margin-right: 0;
-            }
-            
-        
-            
-            
+            }            
     
             a.wp-block-button__link{
                 font-size: 16px;
                 color: black;
                 text-transform: uppercase;
                 font-weight: $fontSemi;
-                width: 308px;
+                width: 288px;
                 
                 
                 &:hover, 
@@ -52,17 +48,41 @@
                 }   
             }
         }
+        @media (min-width: 350px) {
+            @include mc;
+            max-width: 330px;
+            padding: 0.8rem;
+        }
+        @media (min-width: 410px) {  
+            max-width: 360px;
+            padding-right: 2rem;
+            padding-left: 2rem;  
+        }   
+        
+        @media (min-width: 550px){
+            max-width: 500px;
+            
+        }
+        
+        @media (min-width: 700px){
+            max-width: 600px;
+        }    
+        
+        @media (min-width: 800px){
+            max-width: 700px;
+            
+        }
     
     }
     a.btn-link-single{
         // font-size: 18px;
         color: white;
         background-color: black;
-        display: block;
+        display: inline-block;
         text-transform: uppercase;
         text-decoration: none;
         font-weight: $fontBold;
-        width: 308px;
+        width: auto;
         margin: 0 auto;
         text-align: center;
         border: 2px solid black;
