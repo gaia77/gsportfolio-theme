@@ -651,12 +651,42 @@ textarea {
 	padding: 8px;
 	color: #f7f7f7;
 }
+.main-navigation .menu a:hover, .main-navigation .menu a:focus, .main-navigation .menu a:active {
+	text-decoration: underline;
+	color: #f7f7f7;
+}
 .main-navigation .menu svg {
 	width: 35px;
 	height: 35px;
 	display: block;
 	margin: 0 auto;
 	fill: #f7f7f7;
+}
+@media (min-width: 640px) {
+	.main-navigation {
+		background-color: transparent;
+		width: auto;
+		position: relative;
+		top: 0;
+		align-self: center;
+		margin-left: auto;
+	}
+	.main-navigation .menu {
+		display: flex;
+		justify-content: center;
+	}
+	.main-navigation .menu a {
+		color: black;
+		font-weight: 900;
+		letter-spacing: 5px;
+	}
+	.main-navigation .menu a:hover, .main-navigation .menu a:focus, .main-navigation .menu a:active {
+		text-decoration: underline;
+		color: black;
+	}
+	.main-navigation .menu svg {
+		display: none;
+	}
 }
 
 /* Posts and pages
@@ -1041,7 +1071,14 @@ textarea {
 
 .site-header .site-branding {
 	padding: 20px;
+	padding-bottom: 0px;
 	margin-top: 8px;
+}
+@media (min-width: 410px) {
+	.site-header .site-branding {
+		padding-left: 2rem;
+		width: 360px;
+	}
 }
 @media (min-width: 500px) {
 	.site-header .site-branding {
@@ -1051,6 +1088,13 @@ textarea {
 .site-header .custom-logo {
 	width: 150px;
 	height: 150px;
+	padding: 0px;
+}
+@media (min-width: 640px) {
+	.site-header {
+		display: flex;
+		padding-right: 32px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1300,12 +1344,12 @@ textarea {
 	padding: 0 1rem;
 }
 .site-main .post-5 {
-	padding-top: 30px;
-	padding-bottom: 60px;
+	padding-top: 20px;
+	height: 60vh;
 }
 .site-main .post-5 .entry-title {
 	margin: 0px;
-	padding: 16px 20px;
+	padding: 0px 18px 0px 18px;
 	font-size: 28px;
 	font-weight: 400;
 	letter-spacing: 5px;
@@ -1313,9 +1357,32 @@ textarea {
 }
 .site-main .post-5 .name {
 	text-transform: uppercase;
-	font-size: 54px;
-	padding: 16px 20px;
+	font-size: 43px;
+	padding: 0px 18px 0px 18px;
 	margin: 0px;
+}
+@media (min-width: 350px) {
+	.site-main .post-5 {
+		max-width: 330px;
+		padding: 0.8rem;
+	}
+}
+@media (min-width: 410px) {
+	.site-main .post-5 {
+		max-width: 360px;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+}
+@media (min-width: 550px) {
+	.site-main .post-5 {
+		max-width: 500px;
+	}
+}
+@media (min-width: 700px) {
+	.site-main .post-5 {
+		max-width: 600px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1584,6 +1651,11 @@ textarea {
 	font-weight: 400;
 	text-align: center;
 }
+@media (min-width: 500px) {
+	.site-main .project {
+		margin: 4rem;
+	}
+}
 
 /*--------------------------------------------------------------
 # Single Project
@@ -1829,7 +1901,7 @@ textarea {
 
 .site-main .main-container {
 	margin: 16px 20px;
-	margin-bottom: 0px;
+	margin-bottom: 2px;
 }
 .site-main .main-container .project-title {
 	text-transform: uppercase;
@@ -1843,7 +1915,9 @@ textarea {
 }
 .site-main .main-container .wp-block-buttons {
 	display: block;
-	text-align: center;
+}
+.site-main .main-container .wp-block-buttons .wp-block-button {
+	margin-right: 0;
 }
 .site-main .main-container .wp-block-buttons a.wp-block-button__link {
 	font-size: 16px;
@@ -2135,6 +2209,13 @@ textarea {
 	     columns: 2;
 	font-size: 17px;
 }
+@media (min-width: 500px) {
+	.site-main .post-7 {
+		padding: 4rem;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
 .site-main .btn-container a.btn-link-contact,
 .site-main .btn-container a.btn-link-work {
 	color: white;
@@ -2143,7 +2224,7 @@ textarea {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 700;
-	width: 308px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 8px;
 	text-align: center;
@@ -2161,6 +2242,17 @@ textarea {
 	color: black;
 	transition: all 0.1s ease-in-out;
 	transition-delay: 0.2s;
+}
+@media (min-width: 500px) {
+	.site-main .btn-container {
+		display: flex;
+		padding: 0px;
+	}
+	.site-main .btn-container a.btn-link-contact,
+.site-main .btn-container a.btn-link-work {
+		justify-content: center;
+		margin: 0 3px 0 3px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -2405,11 +2497,9 @@ textarea {
 	width: 100%;
 }
 
-.site-main {
-	height: 100%;
-}
 .site-main .post-11 {
 	margin: 16px 20px;
+	height: 60vh;
 }
 .site-main .post-11 .entry-title {
 	text-align: center;
@@ -2433,6 +2523,19 @@ textarea {
 	color: #f7f7f7;
 	transition: all 0.1s ease-in-out;
 	transition-delay: 0.2s;
+}
+@media (min-width: 500px) {
+	.site-main .post-11 {
+		padding: 0 5rem 0 5rem;
+		height: 65vh;
+	}
+	.site-main .post-11 .social {
+		text-align: center;
+	}
+	.site-main .post-11 .social .linkedin, .site-main .post-11 .social .github {
+		display: inline-block;
+		margin: 0 auto;
+	}
 }
 
 /*--------------------------------------------------------------

@@ -25,6 +25,13 @@
             columns: 2;
             font-size: 17px;    
         }
+
+        @media (min-width: 500px) {
+            padding: 4rem;
+            padding-top: 0;
+            padding-bottom: 0;
+            
+        }
     }    
     .btn-container{
         a.btn-link-contact,
@@ -35,7 +42,7 @@
             text-transform: uppercase;
             text-decoration: none;
             font-weight: $fontBold;
-            width: 308px;
+            width: 100%;
             margin: 0 auto;
             margin-top: 8px;
             text-align: center;
@@ -51,8 +58,24 @@
                  transition: all 0.1s ease-in-out;
                  transition-delay: 0.2s;
                 
-            }   
+                }   
         }
+        
+        @media (min-width: 500px) {
+            display: flex;
+            padding: 0px;
+           
+            
+            a.btn-link-contact,
+            a.btn-link-work{
+                // width: auto;
+                 justify-content: center;
+                 margin: 0 3px 0 3px;
+            }
+        
+        }     
+
+        
 
     }            
 

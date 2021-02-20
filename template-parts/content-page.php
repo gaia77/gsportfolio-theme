@@ -43,6 +43,17 @@
 					echo '</div>';							
 				?>
 			</nav>
+		<?php endif ?>
+		<?php
+		if(is_page(7)): ?>
+		<div class="btn-container">
+			
+				<a class="btn-link-contact" href="<?php echo the_permalink(11) ?>">Contact</a>
+			
+				
+				<a class="btn-link-work" href="<?php echo the_permalink(13) ?>">See my Work</a>
+			
+		</div>	
 		<?php endif ?>	
 	</div><!-- .entry-content -->
 

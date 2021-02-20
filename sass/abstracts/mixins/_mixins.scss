@@ -9,3 +9,24 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+
+// MC
+// Centres an element with margin
+@mixin mc($isImage: false, $top: 0, $bottom: 0){
+    @if($isImage == true){
+        display: block;
+    }
+    margin: {
+        top: $top;
+        bottom: $bottom;
+        left: auto;
+        right: auto;
+    }
+}
+
+// Media Query Mixins
+@mixin mq($width){
+    @media (min-width: $width){
+        @content;
+    }
+}

@@ -1,11 +1,12 @@
 // Styles for Single Project page
 
 @import "../base/base";
+@import "../abstracts/mixins/mixins"; 
 
 .site-main{
     .main-container{
         margin: 16px 20px;
-        margin-bottom: 0px;
+        margin-bottom: 2px;
     
         .project-title{
             text-transform: uppercase;
@@ -23,10 +24,12 @@
     
         .wp-block-buttons{
             display: block;
-            text-align: center;
+            // text-align: center;
+            .wp-block-button{
+                margin-right: 0;
+            }
             
-            // width: 100%;
-            // border: 3px solid red;
+        
             
             
     

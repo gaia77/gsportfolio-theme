@@ -1,3 +1,5 @@
+// Styles for Navigation
+
 .main-navigation {
 	display: inline;
 	position: fixed;
@@ -24,6 +26,11 @@
 			padding: 8px;
 			color: #f7f7f7;
 			// margin: 8px;
+			&:hover, &:focus, &:active {
+				text-decoration: underline;
+				color: #f7f7f7;
+
+		   } 
 
 		}
 		svg{
@@ -35,6 +42,39 @@
 			fill: #f7f7f7;
 
 		}
+	}
+
+	@media (min-width: 640px) {
+			background-color: transparent;
+			width: auto;
+			position: relative;
+			top: 0;
+			align-self: center;
+			margin-left: auto;
+
+			.menu {
+				display: flex;
+				justify-content: center;
+
+				
+				a {
+					color: black;
+					font-weight: $fontBlack;
+					letter-spacing: 5px;
+
+					&:hover, &:focus, &:active {
+						text-decoration: underline;
+						color: black;
+				   }   
+
+				}
+
+				svg{
+					display: none;
+				}
+			}
+
+		 
 	}
 
 }

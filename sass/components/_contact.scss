@@ -3,12 +3,11 @@
 @import "../base/base";
 
 .site-main{
-    height: 100%;
+    
     .post-11{
         margin: 16px 20px;
+        height: 60vh;
         
-        // padding-bottom: 250px;
-
         .entry-title{
             text-align: center;
             font-weight: $fontSemi;
@@ -23,12 +22,14 @@
         }
         .social{
             display: flex;
+            
             // border: 3px solid red;
 
             .linkedin, .github{
                 display: inline-block;
                 margin: 0 auto;
-
+                // padding: 8px;
+                
                 &:hover, 
                 &:focus, 
                 &:active {
@@ -43,6 +44,21 @@
             }
         }
     
+        @media (min-width: 500px) {
+            padding: 0 5rem 0 5rem;
+            height: 65vh;
+            // text-align: justify;
+
+             .social{
+                // display: inline-block;
+                text-align: center;
+                    .linkedin, .github{
+                        display: inline-block;
+                        margin: 0 auto;
+                    }
+            }
+        
+        }
         
     }
 
