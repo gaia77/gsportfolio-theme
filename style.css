@@ -1384,6 +1384,11 @@ textarea {
 		max-width: 600px;
 	}
 }
+@media (min-width: 800px) {
+	.site-main .post-5 {
+		max-width: 700px;
+	}
+}
 
 /*--------------------------------------------------------------
 # Work
