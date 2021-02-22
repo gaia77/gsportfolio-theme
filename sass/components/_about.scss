@@ -3,6 +3,11 @@
 @import "../base/base"; 
 
 .site-main{
+    // background-image: url('images/bgnd-03.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+    
 
     .post-7{
         margin: 16px 20px;
@@ -14,6 +19,10 @@
     
         .wp-image-63{
             border-radius: 3px;
+            @media (min-width: 700px){
+                @include mc;
+                
+            } 
 
             
         }
@@ -28,12 +37,35 @@
             font-size: 17px;    
         }
 
-        @media (min-width: 500px) {
-            padding: 4rem;
-            padding-top: 0;
-            padding-bottom: 0;
+        @media (min-width: 350px) {
+            @include mc;
+            max-width: 330px;
+            padding: 0.8rem;
+        }
+        @media (min-width: 410px) {  
+            max-width: 360px;
+            padding-right: 2rem;
+            padding-left: 2rem;  
+        }   
+        
+        @media (min-width: 550px){
+            max-width: 500px;
             
         }
+        
+        @media (min-width: 700px){
+            max-width: 600px;
+        }    
+        
+        @media (min-width: 800px){
+            max-width: 700px;
+            
+        }// @media (min-width: 410px) {
+        //     padding: 3rem;
+        //     padding-top: 0;
+        //     padding-bottom: 0;
+            
+        // }
     }    
     .btn-container{
         a.btn-link-contact,

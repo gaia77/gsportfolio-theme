@@ -3,7 +3,15 @@
 @import "../base/base";
 @import "../abstracts/mixins/mixins"; 
 
-.site-main {
+
+.home{
+    // background-image: url('images/bgnd-03.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
+
+ 
+    
+    .site-main {
         
         overflow: hidden;
         padding: 0 1rem;
@@ -63,4 +71,7 @@
     }    
     
     
+}
+
+
 }

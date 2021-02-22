@@ -34,7 +34,9 @@ get_header();
 				the_content();
 			?>
 		</div>
+		<div class="btn-link">
 			<a class="btn-link-single" href="<?php echo the_permalink(13) ?>">Back to all projects</a>	
+		</div>
 		<?php	
 		endwhile; // End of the loop.
 		

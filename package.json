@@ -15,5 +15,8 @@
     "gulp-postcss": "9.0.0",
     "gulp-dart-sass": "1.0.2",
     "gulp-sourcemaps": "2.6.5"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
