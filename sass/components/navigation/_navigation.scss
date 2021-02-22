@@ -1,5 +1,7 @@
 // Styles for Navigation
 
+$animate: all 0.2s ease-in-out;
+
 .main-navigation {
 	display: inline;
 	position: fixed;
@@ -62,12 +64,13 @@
 					color: black;
 					font-weight: $fontBlack;
 					letter-spacing: 5px;
+					position: relative;
 					
 					&:hover, &:focus, &:active {
 						text-decoration: underline;
 						color: black;
-				   }   
-
+				   } 
+				
 				}
 
 				svg{

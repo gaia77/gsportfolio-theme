@@ -3,144 +3,157 @@
 @import "../base/base";
 @import "../abstracts/mixins/mixins"; 
 
-.site-main{
-    .main-container{
-        // margin: 16px 20px;
-        padding: 0 1rem;
-        padding-bottom: 0;
-    
-        .project-title{
-            text-transform: uppercase;
-            
-        }
-        .tools{
-            font-weight: $fontReg;
-               
-        }
-    
-        .project-goals, .project-design, 
-        .project-reflections, .project-dev{
-            text-transform: uppercase;
-        }
-    
-        .wp-block-buttons{
-            display: block;
-            // text-align: center;
-            .wp-block-button{
-                margin-right: 0;
-            }            
-    
-            a.wp-block-button__link{
-                font-size: 16px;
-                color: black;
+.post-template-default{
+    background-image: url('images/round.png');
+    background-repeat: repeat;
+
+    .site-main{
+        .main-container{
+            // margin: 16px 20px;
+            padding: 0 1rem;
+            padding-bottom: 0;
+        
+            .project-title{
                 text-transform: uppercase;
-                font-weight: $fontSemi;
-                width: 288px;
                 
-                
-                &:hover, 
-                &:focus, 
-                &:active{
-                        opacity: 1;
-                        background-color: black;
-                        color: #f7f7f7;
-                        transition: all 0.1s ease-in-out;
-                        transition-delay: 0.2s;
-                }   
             }
-        }
-        @media (min-width: 350px) {
-            @include mc;
-            max-width: 330px;
-            // padding: 0.8rem;
-        }
-        @media (min-width: 410px) {  
-            max-width: 360px;
-            padding-right: 2rem;
-            padding-left: 2rem;  
-        }   
+            .tools{
+                font-weight: $fontReg;
+                   
+            }
         
-        @media (min-width: 550px){
-            max-width: 500px;
+            .project-goals, .project-design, 
+            .project-reflections, .project-dev{
+                text-transform: uppercase;
+            }
+        
+            .wp-block-buttons{
+                display: block;
+                background-color: #f7f7f7;
+                // text-align: center;
+                .wp-block-button{
+                    margin-right: 0;
+                }            
+        
+                a.wp-block-button__link{
+                    font-size: 16px;
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: $fontBold;
+                    width: 288px;
+                    
+                    
+                    &:hover, 
+                    &:focus, 
+                    &:active{
+                            opacity: 1;
+                            background-color: black;
+                            color: #f7f7f7;
+                            transition: all 0.1s ease-in-out;
+                            transition-delay: 0.2s;
+                    }   
+                }
+            }
+            @media (min-width: 350px) {
+                @include mc;
+                max-width: 330px;
+                // padding: 0.8rem;
+            }
+            @media (min-width: 410px) {  
+                max-width: 360px;
+                padding-right: 2rem;
+                padding-left: 2rem;  
+            }   
             
-        }
-        
-        @media (min-width: 700px){
-            max-width: 600px;
-        }    
-        
-        @media (min-width: 800px){
-            max-width: 700px;
+            @media (min-width: 550px){
+                max-width: 500px;
+                
+            }
             
+            @media (min-width: 700px){
+                max-width: 600px;
+            }    
+            
+            @media (min-width: 800px){
+                max-width: 700px;
+                
+            }
+        
         }
     
-    }
-
-    .btn-link{
-        display: block;
-    
-        @media (min-width: 320px) {
-            @include mc;
-            // max-width: 30px;
-            padding: 0.8rem; 
-        }
-    
-        @media (min-width: 350px) {
-            // @include mc;
-            max-width: 330px;
-            padding: 0.8rem;
-        }
-        @media (min-width: 410px) {  
-            max-width: 360px;
-            padding-right: 2rem;
-            padding-left: 2rem;  
-        }   
+        .btn-link{
+            display: block;
         
-        @media (min-width: 550px){
-            max-width: 500px;
-            
-        }
-        
-        @media (min-width: 700px){
-            max-width: 600px;
-        }    
-        
-        @media (min-width: 800px){
-            max-width: 700px;
-            
-        }
-        a.btn-link-single{
-            text-align: center;
-            // font-size: 18px;
-            color: white;
-            background-color: black;
-            // display: block;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: $fontBold;
-            // height: 49px;
-            // width: 288px;
-            // width: auto;
-            margin-right: 0 auto;
-            
-            border: 2px solid black;
-            border-radius: 3px;
-            padding: 10.672px 21.328px;
-            
             @media (min-width: 320px) {
-                max-width: 288px;
-                background-color: brown;
-                display: flex;
-               
+                @include mc;
+                padding-left: 0.9rem;
+                // max-width: 30px;
+                // padding: 0.8rem; 
+                
+            }
+        
+            @media (min-width: 350px) {
+                // @include mc;
+                max-width: 330px;
+                padding: 0.8rem;
+            }
+            @media (min-width: 410px) {  
+                max-width: 360px;
+                padding-right: 2rem;
+                padding-left: 2rem;  
+            }   
+            
+            @media (min-width: 550px){
+                max-width: 500px;
                 
             }
             
-        }
+            @media (min-width: 700px){
+                max-width: 600px;
+            }    
+            
+            @media (min-width: 800px){
+                max-width: 700px;
+                
+                
+            }
+            a.btn-link-single{
+                text-align: center;
+                // font-size: 18px;
+                color: white;
+                background-color: black;
+                // display: block;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: $fontBold;
+                // height: 49px;
+                // width: 288px;
+                // width: auto;
+                margin-right: 0 auto;
+                
+                border: 2px solid black;
+                border-radius: 3px;
+                padding: 10.672px 21.328px;
+                
+                @media (min-width: 320px) {
+                    max-width: 288px;
+                    background-color: black;
+                    display: block;    
+                }
 
-    }
+                @media (min-width: 800px){
+                    max-width: 580px;
+                }
+                
+            }
     
+        }
+        
+        
+    }//site-main
     
-}//site-main
+
+}
 
 
 

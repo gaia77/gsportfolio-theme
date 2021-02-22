@@ -683,6 +683,7 @@ textarea {
 		color: black;
 		font-weight: 900;
 		letter-spacing: 5px;
+		position: relative;
 	}
 	.main-navigation .menu a:hover, .main-navigation .menu a:focus, .main-navigation .menu a:active {
 		text-decoration: underline;
@@ -1349,6 +1350,10 @@ textarea {
 	width: 100%;
 }
 
+.home {
+	background-image: url("images/round.png");
+	background-repeat: repeat;
+}
 .home .site-main {
 	overflow: hidden;
 	padding: 0 1rem;
@@ -1646,14 +1651,20 @@ textarea {
 	width: 100%;
 }
 
-.site-main .page-header {
+.blog {
+	background-image: url("images/round.png");
+	background-repeat: repeat;
+}
+.blog .page-header {
 	text-align: center;
 }
-.site-main .work {
+.blog .work {
 	text-transform: uppercase;
 	font-weight: 700;
+	margin-top: 0px;
 }
-.site-main .project {
+.blog .project {
+	background-color: #f7f7f7;
 	border: 1px solid black;
 	box-shadow: 8px 8px 17px 2px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 8px 8px 17px -2px rgba(0, 0, 0, 0.75);
@@ -1662,18 +1673,18 @@ textarea {
 	margin: 0 1rem;
 	margin-bottom: 30px;
 }
-.site-main .project .work-title {
+.blog .project .work-title {
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 600;
 	margin: 0px;
 }
-.site-main .project .tools {
+.blog .project .tools {
 	font-weight: 400;
 	text-align: center;
 }
 @media (min-width: 350px) {
-	.site-main .project {
+	.blog .project {
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-left: auto;
@@ -1683,24 +1694,24 @@ textarea {
 	}
 }
 @media (min-width: 410px) {
-	.site-main .project {
+	.blog .project {
 		max-width: 360px;
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
 }
 @media (min-width: 550px) {
-	.site-main .project {
+	.blog .project {
 		max-width: 500px;
 	}
 }
 @media (min-width: 700px) {
-	.site-main .project {
+	.blog .project {
 		max-width: 600px;
 	}
 }
 @media (min-width: 800px) {
-	.site-main .project {
+	.blog .project {
 		max-width: 700px;
 	}
 }
@@ -1947,34 +1958,39 @@ textarea {
 	width: 100%;
 }
 
-.site-main .main-container {
+.post-template-default {
+	background-image: url("images/round.png");
+	background-repeat: repeat;
+}
+.post-template-default .site-main .main-container {
 	padding: 0 1rem;
 	padding-bottom: 0;
 }
-.site-main .main-container .project-title {
+.post-template-default .site-main .main-container .project-title {
 	text-transform: uppercase;
 }
-.site-main .main-container .tools {
+.post-template-default .site-main .main-container .tools {
 	font-weight: 400;
 }
-.site-main .main-container .project-goals, .site-main .main-container .project-design,
-.site-main .main-container .project-reflections, .site-main .main-container .project-dev {
+.post-template-default .site-main .main-container .project-goals, .post-template-default .site-main .main-container .project-design,
+.post-template-default .site-main .main-container .project-reflections, .post-template-default .site-main .main-container .project-dev {
 	text-transform: uppercase;
 }
-.site-main .main-container .wp-block-buttons {
+.post-template-default .site-main .main-container .wp-block-buttons {
 	display: block;
+	background-color: #f7f7f7;
 }
-.site-main .main-container .wp-block-buttons .wp-block-button {
+.post-template-default .site-main .main-container .wp-block-buttons .wp-block-button {
 	margin-right: 0;
 }
-.site-main .main-container .wp-block-buttons a.wp-block-button__link {
+.post-template-default .site-main .main-container .wp-block-buttons a.wp-block-button__link {
 	font-size: 16px;
 	color: black;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 700;
 	width: 288px;
 }
-.site-main .main-container .wp-block-buttons a.wp-block-button__link:hover, .site-main .main-container .wp-block-buttons a.wp-block-button__link:focus, .site-main .main-container .wp-block-buttons a.wp-block-button__link:active {
+.post-template-default .site-main .main-container .wp-block-buttons a.wp-block-button__link:hover, .post-template-default .site-main .main-container .wp-block-buttons a.wp-block-button__link:focus, .post-template-default .site-main .main-container .wp-block-buttons a.wp-block-button__link:active {
 	opacity: 1;
 	background-color: black;
 	color: #f7f7f7;
@@ -1982,7 +1998,7 @@ textarea {
 	transition-delay: 0.2s;
 }
 @media (min-width: 350px) {
-	.site-main .main-container {
+	.post-template-default .site-main .main-container {
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-left: auto;
@@ -1991,68 +2007,68 @@ textarea {
 	}
 }
 @media (min-width: 410px) {
-	.site-main .main-container {
+	.post-template-default .site-main .main-container {
 		max-width: 360px;
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
 }
 @media (min-width: 550px) {
-	.site-main .main-container {
+	.post-template-default .site-main .main-container {
 		max-width: 500px;
 	}
 }
 @media (min-width: 700px) {
-	.site-main .main-container {
+	.post-template-default .site-main .main-container {
 		max-width: 600px;
 	}
 }
 @media (min-width: 800px) {
-	.site-main .main-container {
+	.post-template-default .site-main .main-container {
 		max-width: 700px;
 	}
 }
-.site-main .btn-link {
+.post-template-default .site-main .btn-link {
 	display: block;
 }
 @media (min-width: 320px) {
-	.site-main .btn-link {
+	.post-template-default .site-main .btn-link {
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 0.8rem;
+		padding-left: 0.9rem;
 	}
 }
 @media (min-width: 350px) {
-	.site-main .btn-link {
+	.post-template-default .site-main .btn-link {
 		max-width: 330px;
 		padding: 0.8rem;
 	}
 }
 @media (min-width: 410px) {
-	.site-main .btn-link {
+	.post-template-default .site-main .btn-link {
 		max-width: 360px;
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
 }
 @media (min-width: 550px) {
-	.site-main .btn-link {
+	.post-template-default .site-main .btn-link {
 		max-width: 500px;
 	}
 }
 @media (min-width: 700px) {
-	.site-main .btn-link {
+	.post-template-default .site-main .btn-link {
 		max-width: 600px;
 	}
 }
 @media (min-width: 800px) {
-	.site-main .btn-link {
+	.post-template-default .site-main .btn-link {
 		max-width: 700px;
 	}
 }
-.site-main .btn-link a.btn-link-single {
+.post-template-default .site-main .btn-link a.btn-link-single {
 	text-align: center;
 	color: white;
 	background-color: black;
@@ -2065,10 +2081,15 @@ textarea {
 	padding: 10.672px 21.328px;
 }
 @media (min-width: 320px) {
-	.site-main .btn-link a.btn-link-single {
+	.post-template-default .site-main .btn-link a.btn-link-single {
 		max-width: 288px;
-		background-color: brown;
-		display: flex;
+		background-color: black;
+		display: block;
+	}
+}
+@media (min-width: 800px) {
+	.post-template-default .site-main .btn-link a.btn-link-single {
+		max-width: 580px;
 	}
 }
 
@@ -2654,27 +2675,31 @@ textarea {
 	width: 100%;
 }
 
-.site-main .post-11 {
+.page-template-default {
+	background-image: url("images/round.png");
+	background-repeat: repeat;
+}
+.page-template-default .site-main .post-11 {
 	margin: 16px 20px;
 	height: 60vh;
 }
-.site-main .post-11 .entry-title {
+.page-template-default .site-main .post-11 .entry-title {
 	text-align: center;
 	font-weight: 600;
 }
-.site-main .post-11 a {
+.page-template-default .site-main .post-11 a {
 	text-decoration: none;
 	color: #2c3233;
 	font-weight: 700;
 }
-.site-main .post-11 .social {
+.page-template-default .site-main .post-11 .social {
 	display: flex;
 }
-.site-main .post-11 .social .linkedin, .site-main .post-11 .social .github {
+.page-template-default .site-main .post-11 .social .linkedin, .page-template-default .site-main .post-11 .social .github {
 	display: inline-block;
 	margin: 0 auto;
 }
-.site-main .post-11 .social .linkedin:hover, .site-main .post-11 .social .linkedin:focus, .site-main .post-11 .social .linkedin:active, .site-main .post-11 .social .github:hover, .site-main .post-11 .social .github:focus, .site-main .post-11 .social .github:active {
+.page-template-default .site-main .post-11 .social .linkedin:hover, .page-template-default .site-main .post-11 .social .linkedin:focus, .page-template-default .site-main .post-11 .social .linkedin:active, .page-template-default .site-main .post-11 .social .github:hover, .page-template-default .site-main .post-11 .social .github:focus, .page-template-default .site-main .post-11 .social .github:active {
 	opacity: 1;
 	fill: #383838;
 	color: #f7f7f7;
@@ -2682,20 +2707,20 @@ textarea {
 	transition-delay: 0.2s;
 }
 @media (min-width: 500px) {
-	.site-main .post-11 {
+	.page-template-default .site-main .post-11 {
 		padding: 0 5rem 0 5rem;
 		height: 65vh;
 	}
-	.site-main .post-11 .social {
+	.page-template-default .site-main .post-11 .social {
 		text-align: center;
 	}
-	.site-main .post-11 .social .linkedin, .site-main .post-11 .social .github {
+	.page-template-default .site-main .post-11 .social .linkedin, .page-template-default .site-main .post-11 .social .github {
 		display: inline-block;
 		margin: 0 auto;
 	}
 }
 @media (min-width: 350px) {
-	.site-main .post-11 {
+	.page-template-default .site-main .post-11 {
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-left: auto;
@@ -2705,24 +2730,24 @@ textarea {
 	}
 }
 @media (min-width: 410px) {
-	.site-main .post-11 {
+	.page-template-default .site-main .post-11 {
 		max-width: 360px;
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
 }
 @media (min-width: 550px) {
-	.site-main .post-11 {
+	.page-template-default .site-main .post-11 {
 		max-width: 500px;
 	}
 }
 @media (min-width: 700px) {
-	.site-main .post-11 {
+	.page-template-default .site-main .post-11 {
 		max-width: 600px;
 	}
 }
 @media (min-width: 800px) {
-	.site-main .post-11 {
+	.page-template-default .site-main .post-11 {
 		max-width: 700px;
 	}
 }
