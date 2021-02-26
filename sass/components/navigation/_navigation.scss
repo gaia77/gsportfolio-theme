@@ -23,21 +23,43 @@ $animate: all 0.2s ease-in-out;
 		a {
 			font-size: 15px;
 			text-decoration: none;
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			text-transform: uppercase;
 			align-content: center;
 			padding: 8px;
 			color: #f7f7f7;
-			// margin: 8px;			
-
-			&:hover, &:focus, &:active {
-				text-decoration: underline;
-				color: #f7f7f7;
-			} 
+			// margin: 8px;	
+		}
 			
 
-		}
+			a::after{
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 0%;
+				content: '.';
+				color: transparent;
+				background: red;
+				height: 1px;
+			}
+			a:hover::after{
+			width: 100%;
+			}
+			
+			// &:hover, &:focus, &:active {
+			// 	text-decoration: underline;
+			// 	color: #f7f7f7;
+			// } 
+			
+
+
+
+
+		
 		svg{
 			width: 35px;
 			height: 35px;
@@ -70,7 +92,7 @@ $animate: all 0.2s ease-in-out;
 					position: relative;
 					
 					&:hover, &:focus, &:active {
-						text-decoration: underline;
+						// text-decoration: underline;
 						color: black;
 				   } 
 				

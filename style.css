@@ -645,6 +645,7 @@ textarea {
 .main-navigation .menu a {
 	font-size: 15px;
 	text-decoration: none;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	text-transform: uppercase;
@@ -652,9 +653,20 @@ textarea {
 	padding: 8px;
 	color: #f7f7f7;
 }
-.main-navigation .menu a:hover, .main-navigation .menu a:focus, .main-navigation .menu a:active {
-	text-decoration: underline;
-	color: #f7f7f7;
+.main-navigation .menu a::after {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: ".";
+	color: transparent;
+	background: red;
+	height: 1px;
+}
+.main-navigation .menu a:hover::after {
+	width: 100%;
 }
 .main-navigation .menu svg {
 	width: 35px;
@@ -687,7 +699,6 @@ textarea {
 		position: relative;
 	}
 	.main-navigation .menu a:hover, .main-navigation .menu a:focus, .main-navigation .menu a:active {
-		text-decoration: underline;
 		color: black;
 	}
 	.main-navigation .menu svg {
@@ -1377,6 +1388,49 @@ textarea {
 	font-size: 43px;
 	padding: 0px 18px 0px 18px;
 	margin: 0px;
+}
+.home .site-main .post-5 .has-text-align-left .line {
+	display: inline-block;
+	position: relative;
+}
+@-webkit-keyframes slide {
+	0% {
+		left: -100px;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+@keyframes slide {
+	0% {
+		left: -100px;
+		opacity: 0;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+.home .site-main .post-5 .has-text-align-left .line:after {
+	background: yellow;
+	content: "";
+	display: block;
+	height: 15px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	-webkit-animation: slide;
+	        animation: slide;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
 }
 @media (min-width: 350px) {
 	.home .site-main .post-5 {
