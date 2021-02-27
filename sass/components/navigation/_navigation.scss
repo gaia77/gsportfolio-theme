@@ -30,7 +30,6 @@ $animate: all 0.2s ease-in-out;
 			align-content: center;
 			padding: 8px;
 			color: #f7f7f7;
-			// margin: 8px;	
 		}
 			
 
@@ -43,29 +42,18 @@ $animate: all 0.2s ease-in-out;
 				width: 0%;
 				content: '.';
 				color: transparent;
-				background: red;
-				height: 1px;
+				background: black;
+				height: 3px;
 			}
 			a:hover::after{
 			width: 100%;
 			}
-			
-			// &:hover, &:focus, &:active {
-			// 	text-decoration: underline;
-			// 	color: #f7f7f7;
-			// } 
-			
-
-
-
-
-		
+	
 		svg{
 			width: 35px;
 			height: 35px;
 			display: block;
 			margin: 0 auto;
-			// padding-top: 10px;
 			fill: #f7f7f7;
 
 		}
@@ -90,12 +78,6 @@ $animate: all 0.2s ease-in-out;
 					font-weight: $fontBlack;
 					letter-spacing: 5px;
 					position: relative;
-					
-					&:hover, &:focus, &:active {
-						// text-decoration: underline;
-						color: black;
-				   } 
-				
 				}
 
 				svg{
