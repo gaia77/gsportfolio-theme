@@ -662,8 +662,8 @@ textarea {
 	width: 0%;
 	content: ".";
 	color: transparent;
-	background: red;
-	height: 1px;
+	background: black;
+	height: 3px;
 }
 .main-navigation .menu a:hover::after {
 	width: 100%;
@@ -697,9 +697,6 @@ textarea {
 		font-weight: 900;
 		letter-spacing: 5px;
 		position: relative;
-	}
-	.main-navigation .menu a:hover, .main-navigation .menu a:focus, .main-navigation .menu a:active {
-		color: black;
 	}
 	.main-navigation .menu svg {
 		display: none;
