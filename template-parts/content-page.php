@@ -29,21 +29,22 @@
 		?>
 		<?php
 		if(is_page(11)): ?>
-		<nav class="social">
+			<nav class="social">
 				<?php
 					echo '<div class="linkedin">'; 	
-						echo '<a href="https://www.linkedin.com/in/gaia-santoro/">';
+						echo '<a href="https://www.linkedin.com/in/gaia-santoro/" target="_blank">';
 						get_template_part( 'icons/linkedin');
 						echo '</a>';
 					echo '</div>';
 					echo '<div class="github">'; 	
-						echo '<a href="https://www.github.com/gaia77">';
+						echo '<a href="https://www.github.com/gaia77" target="_blank">';
 						get_template_part( 'icons/github');
 						echo '</a>';		
 					echo '</div>';							
 				?>
 			</nav>
-		<?php endif ?>
+			<?php 
+		endif ?>
 		<?php
 		if(is_page(7)): ?>
 		<div class="btn-container">

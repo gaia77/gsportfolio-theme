@@ -24,24 +24,27 @@
             @include mc;
             max-width: 330px;
             padding: 0.8rem;
+            margin: auto;
         }
         @media (min-width: 410px) {  
-            max-width: 360px;
-            // padding-right: 2rem;
-            // padding-left: 2rem;  
+            max-width: 360px; 
         }   
         
         @media (min-width: 550px){
             max-width: 500px;
+            margin: auto;
             
         }
         
         @media (min-width: 700px){
             max-width: 600px;
+            // margin-right: 32px;
+            
         }    
         
         @media (min-width: 800px){
             max-width: 700px;
+            margin-right: 145px;
             
         }
     }

@@ -1411,7 +1411,6 @@ textarea {
 	}
 }
 .home .site-main .post-5 .has-text-align-left .line:after {
-	background: yellow;
 	content: "";
 	display: block;
 	height: 15px;
@@ -1714,7 +1713,7 @@ textarea {
 .blog .work {
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-top: 0px;
+	margin: 21.44px;
 }
 .blog .project {
 	background-image: url("images/bgnd-work.png");
@@ -2031,7 +2030,6 @@ textarea {
 }
 .post-template-default .site-main .main-container .wp-block-buttons {
 	display: block;
-	background-color: #f7f7f7;
 }
 .post-template-default .site-main .main-container .wp-block-buttons .wp-block-button {
 	margin-right: 0;
@@ -2039,6 +2037,7 @@ textarea {
 .post-template-default .site-main .main-container .wp-block-buttons a.wp-block-button__link {
 	font-size: 16px;
 	color: black;
+	background-color: #f7f7f7;
 	text-transform: uppercase;
 	font-weight: 700;
 	width: 288px;
@@ -3074,6 +3073,7 @@ textarea {
 		margin-right: auto;
 		max-width: 330px;
 		padding: 0.8rem;
+		margin: auto;
 	}
 }
 @media (min-width: 410px) {
@@ -3084,6 +3084,7 @@ textarea {
 @media (min-width: 550px) {
 	.site-footer .site-info {
 		max-width: 500px;
+		margin: auto;
 	}
 }
 @media (min-width: 700px) {
@@ -3094,6 +3095,7 @@ textarea {
 @media (min-width: 800px) {
 	.site-footer .site-info {
 		max-width: 700px;
+		margin-right: 145px;
 	}
 }
 
