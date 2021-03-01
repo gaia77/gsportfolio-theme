@@ -17,7 +17,6 @@
             .entry-title{
                 text-align: center;
                 font-weight: $fontSemi;
-                // border: 3px solid green;
             }
     
             
@@ -28,13 +27,10 @@
             }
             .social{
                 display: flex;
-                
-                // border: 3px solid red;
     
                 .linkedin, .github{
                     display: inline-block;
                     margin: 0 auto;
-                    // padding: 8px;
                     
                     &:hover, 
                     &:focus, 
@@ -45,7 +41,7 @@
                             transition: all 0.1s ease-in-out;
                             transition-delay: 0.2s;
                                 
-                         }   
+                        }   
         
                 }
                 
@@ -54,10 +50,8 @@
             @media (min-width: 500px) {
                 padding: 0 5rem 0 5rem;
                 height: 65vh;
-                // text-align: justify;
-    
-                 .social{
-                    // display: inline-block;
+                
+                .social{
                     text-align: center;
                         .linkedin, .github{
                             display: inline-block;

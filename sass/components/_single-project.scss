@@ -9,7 +9,6 @@
 
     .site-main{
         .main-container{
-            // margin: 16px 20px;
             padding: 0 1rem;
             padding-bottom: 0;
         
@@ -56,7 +55,6 @@
             @media (min-width: 350px) {
                 @include mc;
                 max-width: 330px;
-                // padding: 0.8rem;
             }
             @media (min-width: 410px) {  
                 max-width: 360px;
@@ -85,14 +83,11 @@
         
             @media (min-width: 320px) {
                 @include mc;
-                padding-left: 0.9rem;
-                // max-width: 30px;
-                // padding: 0.8rem; 
+                padding-left: 0.9rem; 
                 
             }
         
             @media (min-width: 350px) {
-                // @include mc;
                 max-width: 330px;
                 padding: 0.8rem;
             }
@@ -118,16 +113,11 @@
             }
             a.btn-link-single{
                 text-align: center;
-                // font-size: 18px;
                 color: white;
                 background-color: black;
-                // display: block;
                 text-transform: uppercase;
                 text-decoration: none;
                 font-weight: $fontBold;
-                // height: 49px;
-                // width: 288px;
-                // width: auto;
                 margin-right: 0 auto;
                 
                 border: 2px solid black;
@@ -157,6 +147,3 @@
 
 
 
-// @media (min-width: $tabletSmall){
-//     @include mc;
-// }

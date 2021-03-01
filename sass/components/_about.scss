@@ -3,11 +3,6 @@
 @import "../base/base"; 
 
 .site-main{
-    // background-image: url('images/bgnd-03.png');
-    // background-position: center;
-    // background-repeat: no-repeat;
-
-    
 
     .post-7{
         margin: 16px 20px;
@@ -66,12 +61,7 @@
         @media (min-width: 800px){
             max-width: 700px;
             
-        }// @media (min-width: 410px) {
-        //     padding: 3rem;
-        //     padding-top: 0;
-        //     padding-bottom: 0;
-            
-        // }
+        }
     }    
     .btn-container{
         a.btn-link-contact,
@@ -108,7 +98,6 @@
             
             a.btn-link-contact,
             a.btn-link-work{
-                // width: auto;
                  justify-content: center;
                  margin: 0 3px 0 3px;
             }
