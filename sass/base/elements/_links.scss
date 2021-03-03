@@ -1,35 +1,10 @@
-//  a {
-//  	color: $color__link;
-
-//  	&:visited {
-//  		color: $color__link-visited;
-//  	}
-
-//  	&:hover,
-//  	&:focus,
-//  	&:active {
-//  		color: $color__link-hover;
-//  	}
-
-//  	&:focus {
-//  		outline: thin dotted;
-//  	}
-
-//  	&:hover,
-//  	&:active {
-// 		outline: 0;
-//  	}
-//  }
-
 a.button-link{
-	// font-size: 18px;
 	color: black;
 	display: block;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: $fontBold;
 	max-width: 170px;
-	//width: 100%;
 	margin: 0 auto;
 	margin-top: 19.92px;
 	text-align: center;

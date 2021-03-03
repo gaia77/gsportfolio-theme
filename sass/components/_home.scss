@@ -3,9 +3,11 @@
 @import "../base/base";
 @import "../abstracts/mixins/mixins"; 
 
+/* Home
+--------------------------------------------- */
 
 .home{
-    // background pattern cortesy of Craig Schwartz
+    // background pattern courtesy of Craig Schwartz
     background-image: url('images/bgnd-round.jpg');
     background-repeat: repeat;
     
@@ -37,34 +39,7 @@
                 .line{
                     display: inline-block;
                     position: relative;
-                    // z-index: 5;
                 }
-
-                // underline styles tutorial  https://codepen.io/anon/pen/eaaEWr
-                // @keyframes slide {
-                //     0% { left:-100px; opacity:0; } 
-                //     100% { left:0;opacity:1; }
-                // }
-                // .line:after {
-                //     // background: yellow;
-                //     content: '';
-                //     display: block;
-                //     height: 15px;
-                //     position: absolute;
-                //     bottom: 0;
-                //     left: 0;
-                //     width: 100%;
-                //     z-index: -1;
-                //     animation: slide;
-                //     animation-duration: 3s;
-                //     animation-delay: 1s;
-                //     animation-fill-mode: forwards;
-                // }    
-
-                // @media (min-width: 350px) {
-                //     max-width: 330px;
-                //     padding: 0.9rem;
-                // }
         
             }
         
